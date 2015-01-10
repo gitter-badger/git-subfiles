@@ -7,6 +7,13 @@
 		"type" : "git",
 		"url" : "git@github.com:phanect/git-subfiles.git"
 	},
+	"dependencies": {
+		"es6-promise": "latest",
+		"fs-extra": "latest",
+		"gift": "latest",
+		"process": "latest",
+		"underscore": "latest"
+	},
 	"engines": {
 		"node": "0.10.x"
 	}
