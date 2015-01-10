@@ -12,7 +12,7 @@
 	var promises = [];
 	var cwd = process.cwd();
 	var jsonPath = path.join(cwd, "subfiles.json");
-	var cloneSync = function(configs, count) {
+	var downloadSubfiles = function(configs, count) {
 		var repodir = "/tmp/git-subfile-" + _.random(0, 999999);
 
 		if (configs.length <= count) {
@@ -68,7 +68,7 @@
 			Promise.all(promises).then(function() {
 				fs.remove(repodir, function() {
 					// TODO add files into .gitignore
-					cloneSync(configs, count + 1);
+					downloadSubfiles(configs, count + 1);
 				});
 			}).catch(function(err) {
 				console.error(err.stack);
@@ -80,7 +80,7 @@
 	exports.downloadSubfiles = function() {
 		if (fs.existsSync(jsonPath)) {
 			var configs = require(jsonPath);
-			cloneSync(configs);
+			downloadSubfiles(configs);
 		} else {
 			console.info("No subfiles.json found in this directory.");
 		}
