@@ -1,0 +1,9 @@
+[
+	{
+		"repo": "git@github.com:growaspeople/coding-standards.git",
+		"files": [
+			{ "src": "/javascript/.jshintrc", "dest": "/.jshintrc" },
+			{ "src": "/javascript/.jscs.json", "dest": "/.jscs.json" }
+		]
+	}
+]
