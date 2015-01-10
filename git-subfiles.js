@@ -77,12 +77,12 @@
 		});
 	};
 
-	if (fs.existsSync(jsonPath)) {
-		var configs = require(jsonPath);
-
-		cloneSync(configs);
-	} else {
-		console.info("No subfiles.json found in this directory.");
-	}
-
+	exports.downloadSubfiles = function() {
+		if (fs.existsSync(jsonPath)) {
+			var configs = require(jsonPath);
+			cloneSync(configs);
+		} else {
+			console.info("No subfiles.json found in this directory.");
+		}
+	};
 }());
