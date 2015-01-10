@@ -1,0 +1,4 @@
+node_modules/
+.jshintrc
+.jscs.json
+npm-debug.log
