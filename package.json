@@ -1,0 +1,13 @@
+{
+	"name": "git-subfiles",
+	"description": "Fetch files from other repository and place the file in repo directory",
+	"version": "v0.0.1",
+	"author": "Jumpei Ogawa",
+	"repository": {
+		"type" : "git",
+		"url" : "git@github.com:phanect/git-subfiles.git"
+	},
+	"engines": {
+		"node": "0.10.x"
+	}
+}
