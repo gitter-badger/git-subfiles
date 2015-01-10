@@ -1,0 +1,13 @@
+[
+	{
+		"repo": "git@github.com:phanect/coding-standards.git",
+		"files": [
+			{ "src": "/javascrit/.jshintrc", "dest": "/.jshintrc" },
+			{ "src": "/javascrit/.jscs.json", "dest": "/.jscs.json" }
+		]
+	},
+	{
+		"repo": "git@bitbucket.org:phanect/secrets.git",
+		"files": { "src": "/secrets.json", "dest": "/config/secrets.json" }
+	}
+]
