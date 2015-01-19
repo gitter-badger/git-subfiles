@@ -14,8 +14,8 @@ Example:
         {
             "repo": "git@github.com:phanect/coding-standards.git",
             "files": [
-                { "src": "/javascrit/.jshintrc", "dest": "/.jshintrc" },
-                { "src": "/javascrit/.jscs.json", "dest": "/.jscs.json" }
+                { "src": "/javascript/.jshintrc", "dest": "/.jshintrc" },
+                { "src": "/javascript/.jscs.json", "dest": "/.jscs.json" }
             ]
         },
         {
